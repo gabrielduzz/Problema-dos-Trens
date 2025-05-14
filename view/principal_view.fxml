@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="primaryAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="689.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.PrincipalController">
+   <children>
+      <ImageView fx:id="trails" fitHeight="698.0" fitWidth="628.0" layoutX="-4.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/trilhos%202.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="train1Img" fitHeight="51.0" fitWidth="118.0" layoutX="160.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" visible="false">
+         <image>
+            <Image url="@../resources/trem1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="train2Img" fitHeight="51.0" fitWidth="118.0" layoutX="315.0" layoutY="661.0" pickOnBounds="true" preserveRatio="true" rotate="270.0" scaleY="-1.0" visible="false">
+         <image>
+            <Image url="@../resources/trem2.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="greenRectangle" arcHeight="10.0" arcWidth="10.0" fill="#1b4e3c" height="211.0" layoutX="-2.0" layoutY="229.0" opacity="0.9" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="0.0" visible="false" width="127.0" />
+      <Slider fx:id="sliderTrain1" layoutX="21.0" layoutY="291.0" orientation="VERTICAL" value="50.0" visible="false" />
+      <Label fx:id="labelTrain1" alignment="CENTER" layoutX="48.0" layoutY="326.0" text="50" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Text fx:id="speedMeasurement1" fill="WHITE" layoutX="48.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pixels/ Segundo" visible="false" wrappingWidth="71.4892578125">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Rectangle fx:id="blueRectangle" arcHeight="10.0" arcWidth="10.0" fill="#011627" height="211.0" layoutX="481.0" layoutY="229.0" opacity="0.9" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="0.0" visible="false" width="127.0" />
+      <Slider fx:id="sliderTrain2" layoutX="571.0" layoutY="291.0" orientation="VERTICAL" value="50.0" visible="false" />
+      <Label fx:id="labelTrain2" alignment="CENTER" layoutX="513.0" layoutY="323.0" text="50" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Text fx:id="speedMeasurement2" fill="WHITE" layoutX="478.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pixels/ Segundo" textAlignment="RIGHT" visible="false" wrappingWidth="80.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="positionMarker1" disable="true" fitHeight="86.0" fitWidth="30.0" layoutX="206.0" layoutY="5.0" onMouseClicked="#choosePosition1" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../resources/marcador.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="positionMarker2" disable="true" fitHeight="86.0" fitWidth="30.0" layoutX="359.0" layoutY="5.0" onMouseClicked="#choosePosition2" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../resources/marcador.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="positionMarker3" disable="true" fitHeight="86.0" fitWidth="30.0" layoutX="204.0" layoutY="621.0" onMouseClicked="#choosePosition3" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../resources/marcador.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="positionMarker4" disable="true" fitHeight="86.0" fitWidth="30.0" layoutX="359.0" layoutY="621.0" onMouseClicked="#choosePosition4" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../resources/marcador.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="choosingRectangle" arcHeight="5.0" arcWidth="5.0" fill="#0e251d" height="140.0" layoutX="-5.0" layoutY="265.0" opacity="0.95" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" width="611.0" />
+      <ImageView fx:id="resetButton" disable="true" fitHeight="69.0" fitWidth="71.0" layoutX="525.0" layoutY="607.0" onMouseClicked="#reset" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../resources/reset.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pauseButton" disable="true" fitHeight="49.0" fitWidth="53.0" layoutX="24.0" layoutY="617.0" onMouseClicked="#pause" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../resources/pause.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="resumeButton" disable="true" fitHeight="49.0" fitWidth="53.0" layoutX="24.0" layoutY="617.0" onMouseClicked="#pause" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../resources/resume.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="choosingTitle1" fitHeight="118.0" fitWidth="544.0" layoutX="31.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../resources/titulo%20escolha%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="choosingTitle2" fitHeight="118.0" fitWidth="558.0" layoutX="31.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../resources/titulo%20escolha%202.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="speedTitle1" fitHeight="69.0" fitWidth="182.0" layoutX="-29.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../resources/titulo%20velocidade%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="speedTitle2" fitHeight="69.0" fitWidth="182.0" layoutX="454.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../resources/titulo%20velocidade%202.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="train1Img1" fitHeight="51.0" fitWidth="118.0" layoutX="170.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../resources/trem1.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="opacityRectangle" arcHeight="5.0" arcWidth="5.0" height="707.0" layoutX="-4.0" layoutY="-3.0" opacity="0.85" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="611.0" />
+      <ImageView fx:id="lockVariableButton" fitHeight="108.0" fitWidth="216.0" layoutX="193.0" layoutY="228.0" onMouseClicked="#setLockVariable" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/variável%20de%20travamento.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="strictAlternationButton" fitHeight="108.0" fitWidth="216.0" layoutX="194.0" layoutY="349.0" onMouseClicked="#setStrictAlternation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/estrita%20alternancia.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="petersonSolutionButton" fitHeight="108.0" fitWidth="216.0" layoutX="194.0" layoutY="472.0" onMouseClicked="#setPetersonSolution" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/solucao%20de%20peterson.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mutualExclusionMethodTitle" fitHeight="140.0" fitWidth="462.0" layoutX="70.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/exclusao%20mutua%20titulo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
