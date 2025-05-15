@@ -1,6 +1,6 @@
 # 🚆 Controle de Trens com Threads em JavaFX
 
-Projeto acadêmico baseado no problema da concorrência envolvendo **trens que compartilham trilhos**, desenvolvido com **JavaFX** e **programação concorrente** utilizando `Threads` e `algoritmos vistos em aula` para evitar colisões.
+Projeto acadêmico baseado no problema da concorrência envolvendo **trens que compartilham trilhos**, desenvolvido com **JavaFX** e **programação concorrente** utilizando `Threads` e algoritmos vistos em aula para evitar colisões.
 
 ---
 
